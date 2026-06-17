@@ -19,9 +19,12 @@
     <meta property="og:url" content="https://jbanalyticsllc.io/" />
     <meta name="twitter:card" content="summary_large_image" />
 
-    <link
-      rel="icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b0e14'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='17' font-weight='700' text-anchor='middle' fill='%23e8b349'%3EJB%3C/text%3E%3C/svg%3E" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png" />
+    <link rel="apple-touch-icon" sizes="512x512" href="assets/favicon-512.png" />
+    <meta property="og:image" content="https://jbanalyticsllc.io/assets/logo-b.png" />
+    <meta name="twitter:image" content="https://jbanalyticsllc.io/assets/logo-b.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -132,6 +135,16 @@
         position: absolute; inset: -40% 0 auto 0; height: 600px;
         background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(232,179,73,0.12), transparent 70%);
         pointer-events: none;
+      }
+      .hero-logo {
+        margin-bottom: 28px;
+      }
+      .hero-logo img {
+        width: 120px; height: 120px;
+        margin: 0 auto;
+        border-radius: 20px;
+        filter: drop-shadow(0 0 40px rgba(0,210,200,0.3));
+        animation: fadeUp 0.8s ease-out;
       }
       .eyebrow {
         display: inline-block;
@@ -451,7 +464,7 @@
     <!-- ── Navigation ── -->
     <header>
       <div class="wrap nav">
-        <a href="#top" class="brand">JB<span>Analytics</span></a>
+        <a href="#top" class="brand"><img src="assets/favicon-32.png" alt="JB" style="width:28px;height:28px;display:inline-block;vertical-align:middle;margin-right:8px;border-radius:6px;">JB<span>Analytics</span></a>
 
         <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
           <span></span><span></span><span></span>
@@ -475,6 +488,9 @@
            ═══════════════════════════════════════════════ -->
       <section class="hero">
         <div class="wrap">
+          <div class="hero-logo">
+            <img src="assets/logo-b.png" alt="JBAnalytics Logo" />
+          </div>
           <span class="eyebrow mono">Sports · Data · Probability</span>
           <h1>Algorithmic<br /><span class="accent">sports intelligence.</span></h1>
           <p>
@@ -665,7 +681,7 @@
                 <li><span class="check">✓</span> Email delivery</li>
               </ul>
               <!-- WHOP LINK: Replace href with Whop checkout URL -->
-              <a href="#subscribe-ufc-starter" class="btn btn-ghost btn-sm" data-product="ufc" data-tier="starter">Subscribe →</a>
+              <a href="https://whop.com/checkout/plan_ZqYdUOutkCTkW" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" data-product="ufc" data-tier="starter">Subscribe →</a>
             </div>
 
             <!-- UFC Pro (featured) -->
@@ -683,14 +699,14 @@
                 <li><span class="check">✓</span> Methodology breakdowns</li>
                 <li><span class="check">✓</span> Priority delivery</li>
               </ul>
-              <a href="#subscribe-ufc-pro" class="btn btn-primary btn-sm" data-product="ufc" data-tier="pro">Subscribe →</a>
+              <a href="https://whop.com/checkout/plan_Yd28Kk3qAyFyT" target="_blank" rel="noopener" class="btn btn-primary btn-sm" data-product="ufc" data-tier="pro">Subscribe →</a>
             </div>
 
             <!-- UFC Elite -->
             <div class="price-card">
               <div class="tier-name">Elite</div>
               <div class="price">
-                <span class="currency">$</span>19<span style="font-size:1.6rem">.99</span>
+                <span class="currency">$</span>14<span style="font-size:1.6rem">.99</span>
                 <span class="period">/mo</span>
               </div>
               <p class="price-desc">Maximum edge with institutional-grade data</p>
@@ -701,7 +717,7 @@
                 <li><span class="check">✓</span> Early-access predictions</li>
                 <li><span class="check">✓</span> Direct support channel</li>
               </ul>
-              <a href="#subscribe-ufc-elite" class="btn btn-ghost btn-sm" data-product="ufc" data-tier="elite">Subscribe →</a>
+              <a href="https://whop.com/checkout/plan_ZKCja1m6jnkkk" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" data-product="ufc" data-tier="elite">Subscribe →</a>
             </div>
           </div>
 
@@ -726,7 +742,7 @@
                 <li><span class="check">✓</span> Grand Slam predictions</li>
                 <li><span class="check">✓</span> Email delivery</li>
               </ul>
-              <a href="#subscribe-tennis-baseline" class="btn btn-ghost btn-sm" data-product="tennis" data-tier="baseline">Subscribe →</a>
+              <a href="https://whop.com/checkout/plan_8SbwHb8eSvT5d" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" data-product="tennis" data-tier="baseline">Subscribe →</a>
             </div>
 
             <!-- Tennis Pro (featured) -->
@@ -744,7 +760,7 @@
                 <li><span class="check">✓</span> Confidence ratings</li>
                 <li><span class="check">✓</span> Priority delivery</li>
               </ul>
-              <a href="#subscribe-tennis-edge" class="btn btn-primary btn-sm" data-product="tennis" data-tier="edge">Subscribe →</a>
+              <a href="https://whop.com/checkout/plan_eHyYrZcme87QZ" target="_blank" rel="noopener" class="btn btn-primary btn-sm" data-product="tennis" data-tier="edge">Subscribe →</a>
             </div>
 
             <!-- Tennis Elite -->
@@ -762,7 +778,7 @@
                 <li><span class="check">✓</span> Early-access predictions</li>
                 <li><span class="check">✓</span> Direct support channel</li>
               </ul>
-              <a href="#subscribe-tennis-institutional" class="btn btn-ghost btn-sm" data-product="tennis" data-tier="institutional">Subscribe →</a>
+              <a href="https://whop.com/checkout/plan_TjYquLZcLYJ77" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" data-product="tennis" data-tier="institutional">Subscribe →</a>
             </div>
           </div>
         </div>
@@ -902,7 +918,7 @@
          ═══════════════════════════════════════════════ -->
     <footer>
       <div class="wrap foot">
-        <a href="#top" class="brand" style="font-size:1.1rem">JB<span style="color:var(--gold)">Analytics</span></a>
+        <a href="#top" class="brand" style="font-size:1.1rem"><img src="assets/favicon-32.png" alt="JB" style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:6px;border-radius:5px;">JB<span style="color:var(--gold)">Analytics</span></a>
         <div class="foot-links">
           <a href="#products">Products</a>
           <a href="#pricing">Pricing</a>
